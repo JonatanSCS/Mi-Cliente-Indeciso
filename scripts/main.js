@@ -1,7 +1,7 @@
 
 //GET
 
-/*
+
 function getCuentas(){
   $.getJSON('http://polar-beach-4087.herokuapp.com/accounts/', function(json_data){
     var results = json_data.results;
@@ -182,4 +182,4 @@ $(".submit-tweet").click(function(){
 });
 
 getTweets();
-*/
+
