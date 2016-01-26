@@ -1,1 +1,42 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet" type="text/css"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/bootstrap.css"></head><body><div class="content-fluid"><div class="cuentas"><div class="usuario"><div style="background-image: url(http://polar-beach-4087.herokuapp.com/media/media/useraccounts/covers/mef.jpg" class="imagenes"><img src="http://polar-beach-4087.herokuapp.com/media/media/useraccounts/pictures/mebw.png" alt="" class="img-picture"><span class="username">pablotrinidad</span><span class="biography">Young Backend Developer at Mexico City</span></div><div class="informacion"><span class="first_name">Pablo Trinidad</span><span class="email">p@pablotrinidad.me</span></div><div class="tweets"><ol><li><span class="tweet">Leí los mensajes entre Kate y el Chapo y en ningún momento se enviaron los emojis de changuitos, claramente esa relación no iba a funcionar.</span><span class="fecha">12/23/1919</span></li><li><span class="tweet">Leí los mensajes entre Kate y el Chapo y en ningún momento se enviaron los emojis de changuitos, claramente esa relación no iba a funcionar.</span><span class="fecha">12/23/1919</span></li><li><span class="tweet">Leí los mensajes entre Kate y el Chapo y en ningún momento se enviaron los emojis de changuitos, claramente esa relación no iba a funcionar.</span><span class="fecha">12/23/1919</span></li></ol></div></div><div class="usuario"><div style="background-image: url(http://polar-beach-4087.herokuapp.com/media/media/useraccounts/covers/mef.jpg" class="imagenes"><img src="http://polar-beach-4087.herokuapp.com/media/media/useraccounts/pictures/mebw.png" alt="" class="img-picture"><span class="username">pablotrinidad</span><span class="biography">Young Backend Developer at Mexico City</span></div><div class="informacion"><span class="first_name">Pablo Trinidad</span><span class="email">p@pablotrinidad.me</span></div><div class="tweets"><ol><li><span class="tweet">Leí los mensajes entre Kate y el Chapo y en ningún momento se enviaron los emojis de changuitos, claramente esa relación no iba a funcionar.</span><span class="fecha">12/23/1919</span></li><li><span class="tweet">Leí los mensajes entre Kate y el Chapo y en ningún momento se enviaron los emojis de changuitos, claramente esa relación no iba a funcionar.</span><span class="fecha">12/23/1919</span></li><li><span class="tweet">Leí los mensajes entre Kate y el Chapo y en ningún momento se enviaron los emojis de changuitos, claramente esa relación no iba a funcionar.</span><span class="fecha">12/23/1919</span></li></ol></div></div></div></div><script src="scripts/jquery.js"></script><script src="scripts/bootstrap.js"></script><script src="scripts/scriptUsuarios.js"></script><script src="scripts/scriptTweets.js"></script><script src="scripts/scriptCuentas.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="import" href="polymer-elements/usuario.html">
+    <link rel="import" href="polymer-elements/tweet-pablo.html">
+  </head>
+  <body>
+    <div class="content-fluid">
+      <h1> </h1>
+      <div class="cuentas">
+        <!--usuario-template-->
+      </div>
+      <div class="usuario_informacion col-xs-12">
+        <div class="separacion"></div>
+        <p class="p-info"> </p><span>Nombre de Usuario:</span>
+        <input type="text" placeholder="" class="input-username"><span>Nombre:</span>
+        <input type="text" placeholder="" class="input-first"><span>Apellido:</span>
+        <input type="text" placeholder="" class="input-last"><span>Email:</span>
+        <input type="text" placeholder="" class="input-email">
+        <input type="submit" value="Enviar" class="submit submit-information">
+      </div>
+      <div class="usuario_tweet col-xs-12">
+        <div class="separacion"></div>
+        <p class="p-nombre"> </p>
+        <input type="text" placeholder="Tweet" maxlength="140" class="text-tweet tweet">
+        <input type="submit" class="submit submit-tweet">
+      </div>
+      <div class="tweets-pablo col-xs-12"></div>
+    </div>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/sweetalert.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

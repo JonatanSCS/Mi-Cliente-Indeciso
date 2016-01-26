@@ -1,0 +1,20 @@
+link(rel="import", href="../bower_components/polymer/polymer.html")
+link(rel="stylesheet", href="../css/style.css")
+dom-module(id="usuario-template")
+	template
+		div(class="user-imagen-fondo")
+			img(src='', alt='', class="user-avatar")
+			span(class="username")
+			span(class="user-biography")
+		div(class="user-informacion-usuario")
+			span(class="user-name")
+			span(class="user-email")
+		div(class="tweets-usuario")
+			ol
+				li
+					span(class="user-tweet-usuario")
+					span(class="user-fecha-tweet")
+					
+
+	script.
+		Polymer({ is: "usuario-template" });

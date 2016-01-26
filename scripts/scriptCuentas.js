@@ -1,3 +1,4 @@
+
 //GET
 function getCuentas(){
   $.getJSON('http://polar-beach-4087.herokuapp.com/accounts/', function(json_data){
@@ -10,10 +11,6 @@ function getCuentas(){
       var cover= results[i-1].cover;
       var biography = results[i-1].biography;
       var clase = "usuario-"+i;
-      $(".cuentas").append("<div class='usuario "+clase+"'></div>");
-      $("."+ clase).append("<div class='imagenes imagenes"+i+"' style='background-image: url("+cover+")'></div>");
-      $(".imagenes"+i).append("<img src='"+picture+"' class='img-picture'>");
-      getUsuarios(user, clase, i);
     };
     
   });
@@ -44,6 +41,4 @@ function getTweets(url, clase){
     
   });
 };
-
 getCuentas();
-

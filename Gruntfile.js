@@ -15,17 +15,16 @@ module.exports = function(grunt) {
     },
     
     jade: {
-      debug: {
-        options: {
-          data: {
-          debug: true
-          }
-        },
+      pretty: {
         files: {
-          'index.html': 'index.jade',
-          
+            'index.html': 'index.jade',
+          'polymer-elements/usuario.html': 'polymer-elements/usuario.jade',
+          'polymer-elements/tweet-pablo.html': 'polymer-elements/tweet-pablo.jade',
+        },
+       options: {
+         pretty: true
         }
-      } 
+      }
     },
 
     stylus:{
@@ -36,7 +35,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          'css/style.css': 'css/style.styl'
+          'css/style.css': ['css/home.styl', 'css/form-NuevoUsuario.styl', 'css/nuevo_tweet.styl'],
         }
       } 
     },
@@ -52,8 +51,10 @@ module.exports = function(grunt) {
     },
     watch: {
             stylesheets: {
-                files: ['css/style.styl',
-                        'index.jade'
+                files: ['css/home.styl',
+                        'index.jade',
+                        'polymer-elements/usuario.jade',
+                        'polymer-elements/tweet-pablo.jade',
                         ],
 
 
