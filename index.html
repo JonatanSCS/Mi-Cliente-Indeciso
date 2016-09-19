@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="import" href="polymer-elements/usuario.html">
+    <link rel="import" href="polymer-elements/tweet-pablo.html">
+  </head>
+  <body>
+    <div class="content-fluid">
+      <h1> </h1>
+      <div class="cuentas">
+        <!--usuario-template-->
+      </div>
+      <div class="usuario_informacion col-xs-12">
+        <div class="separacion"></div>
+        <p class="p-info"> </p><span>Nombre de Usuario:</span>
+        <input type="text" placeholder="" class="input-username"><span>Nombre:</span>
+        <input type="text" placeholder="" class="input-first"><span>Apellido:</span>
+        <input type="text" placeholder="" class="input-last"><span>Email:</span>
+        <input type="text" placeholder="" class="input-email">
+        <input type="submit" value="Enviar" class="submit submit-information">
+      </div>
+      <div class="usuario_tweet col-xs-12">
+        <div class="separacion"></div>
+        <p class="p-nombre"> </p>
+        <input type="text" placeholder="Tweet" maxlength="140" class="text-tweet tweet">
+        <input type="submit" class="submit submit-tweet">
+      </div>
+      <div class="tweets-pablo col-xs-12"></div>
+    </div>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/sweetalert.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
